@@ -1,4 +1,4 @@
-﻿Rank,Player,Nation,Confederation,Goals,Caps,Goals per match,Career span,Date of 50th goal
+﻿rank,player,nation,confederation,goals,caps,goals_per_match,career_span,date_of_50th_goal
 1,Cristiano Ronaldo,Portugal,UEFA,135,217,0.62,2003-Present,6/26/2014
 2,Lionel Messi,Argentina,CONMEBOL,112,190,0.59,2005-Present,3/29/2016
 3,Ali Daei,Iran,AFC,108,148,0.73,1993-2006,1/9/2000
