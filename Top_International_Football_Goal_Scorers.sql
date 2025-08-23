@@ -16,3 +16,14 @@ CREATE TABLE top_football_goal_scorers
 		);
 		
 SELECT * FROM top_football_goal_scorers;
+
+-- 1. Which Confederation has the most goal scorers?
+-- 2. How many players were from Brazil?
+-- 3. How many players were from Argentina?
+-- 4. How many players were from Germany?
+-- 5. How many players were from France?
+-- 6. How many players were in each Confederation?
+-- 7. How many players are still active and playing in the present?
+-- 8. Out of the 82 players who had the most "Goals per match"?
+-- 9.
+-- 10.
