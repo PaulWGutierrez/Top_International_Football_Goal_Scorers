@@ -21,14 +21,15 @@ SELECT * FROM top_football_goal_scorers;
 
 -- Q1. How many players are the top goal scorers with 50 or more goals?
 -- Q2. How many players were in each Confederation?
--- Q3. How many players were from Argentina?
--- Q4. How many players were from Germany?
+-- Q3. How many players were from Japan?
+-- Q4. How many players were from Mexico?
 -- Q5. How many players were from France?
 -- Q6. How many players were from Brazil?
--- Q7. Which Confederation has the most goal scorers?
--- Q8. Out of the 82 players who had the most "Goals per match"?
--- Q9. How many players are still active and playing in the present?
--- Q10. Which Confederation has the least goal scorers?
+-- Q7. What are the top 10 countries that produced players that acheived 50+ goals?
+-- Q8. Which Confederation has the most goal scorers?
+-- Q9. Out of the 82 players who had the most "Goals per match"?
+-- Q10. How many players are still active and playing in the present?
+-- Q11. Which Confederation has the least goal scorers?
 
 -- Data Analysis Exploration and Findings:
 
@@ -47,6 +48,54 @@ GROUP BY 1
 ORDER BY 2 DESC;
 
 
--- Q3. How many players were from Argentina?
+-- Q3. How many players were from Japan?
 
+SELECT
+	nation,
+	COUNT (*) AS japanese_players
+FROM top_football_goal_scorers
+Where nation = 'Japan'
+GROUP BY 1;
+
+
+-- Q4. How many players were from Mexico?
+
+SELECT
+	nation,
+	COUNT (*) AS mexican_players
+FROM top_football_goal_scorers
+Where nation = 'Mexico'
+GROUP BY 1;
+
+
+-- Q5. How many players were from France?
+
+SELECT
+	nation,
+	COUNT (*) AS french_players
+FROM top_football_goal_scorers
+Where nation = 'France'
+GROUP BY 1;
+
+
+-- Q6. How many players were from Brazil?
+
+SELECT
+	nation,
+	COUNT (*) AS brazilian_players
+FROM top_football_goal_scorers
+Where nation = 'Brazil'
+GROUP BY 1;
+
+
+-- Q7. What are the top 10 countries that produced players that acheived 50+ goals?
+
+SELECT
+  nation,
+  COUNT(*) AS number_of_players,
+  SUM(goals) AS total_goals
+FROM top_football_goal_scorers
+GROUP BY nation
+ORDER BY 3 DESC
+LIMIT 10;
 
